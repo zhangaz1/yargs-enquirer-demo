@@ -1,0 +1,28 @@
+{
+  "name": "yargs-enquirer-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangaz1/yargs-enquirer-demo.git"
+  },
+  "author": "zhangaz1",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhangaz1/yargs-enquirer-demo/issues"
+  },
+  "homepage": "https://github.com/zhangaz1/yargs-enquirer-demo#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "@types/node": "^14.11.5",
+    "jest": "^26.5.2",
+    "nodemon": "^2.0.4",
+    "ts-jest": "^26.4.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  }
+}
