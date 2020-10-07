@@ -1,9 +1,10 @@
 {
 	"ignore": [],
 	"delay": 100,
-	"exec": "ts-node src/index.ts",
+	"exec": "ts-node src/index.ts -i 5x",
 	"watch": [
-		"src/*"
+		"src/*",
+		"nodemon.config.json"
 	],
 	"ext": "js,jsx,ts,tsx,json"
 }
