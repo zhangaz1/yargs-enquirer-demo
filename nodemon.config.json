@@ -1,7 +1,7 @@
 {
 	"ignore": [],
 	"delay": 100,
-	"exec": "ts-node src/index.ts -i 5x",
+	"exec": "ts-node src/index.ts --help -i 5x",
 	"watch": [
 		"src/*",
 		"nodemon.config.json"

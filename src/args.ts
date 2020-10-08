@@ -1,10 +1,57 @@
 import yargs from 'yargs';
 
 export default function testYargs() {
-	test1();
-	test2();
-	test3();
+	// test1();
+	// test2();
+	// test3();
+	test4();
 };
+
+function test4() {
+	console.log('------------------test4----------------');
+	test();
+	return void (0);
+
+	function test() {
+		yargs
+			.recommendCommands()
+			.usage('Usage: create-lib <cmd> [options]') // usage string of application.
+			.command(cmd('lib'))
+			.command(cmd('app'))
+			.command(cmd('demo'))
+			.demandCommand()
+			.options({
+				'package-name': {
+					alias: 'p',
+					description: 'package name',
+					default: 'pn',
+					required: true,
+				},
+			})
+			// show examples of application in action.
+			.example('npm create lib -p xxx', 'generate lib template as xxx package')
+			// final message to display when successful.
+			.epilog('for more information visit https://github.com/chevex/yargs')
+			// disable showing help on failures, provide a final message
+			// to display for errors.
+			.showHelpOnFail(false, 'whoops, something went wrong! run with --help')
+			.argv;
+	}
+
+	function cmd(cmd: string) {
+		return {
+			command: cmd,
+			describe: `create ${cmd}`,
+			builder: { tmpl: { default: `${cmd}` } },
+			handler: runCmd
+		};
+	}
+
+	function runCmd(args: any) {
+		console.log('args:', args);
+	}
+}
+
 
 function test3() {
 	console.log('------------------test3----------------');
