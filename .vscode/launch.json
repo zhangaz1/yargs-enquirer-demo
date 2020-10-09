@@ -10,7 +10,8 @@
 			"type": "node",
 			"request": "launch",
 			"args": [
-				"${relativeFile}"
+				"${relativeFile}",
+				"lib"
 			],
 			"runtimeArgs": [
 				"--nolazy",
@@ -28,7 +29,13 @@
 			"type": "node",
 			"request": "launch",
 			"args": [
-				"${workspaceFolder}/src/index.ts"
+				"${workspaceFolder}/src/index.ts",
+				"demo",
+				"app",
+				"-p",
+				"xxx",
+				"-o",
+				"xxffffffffff",
 			],
 			"runtimeArgs": [
 				"--nolazy",

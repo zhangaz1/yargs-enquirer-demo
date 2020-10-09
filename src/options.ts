@@ -1,0 +1,37 @@
+import { IOption } from './IOption';
+
+export default [{
+	name: 'packageName',
+	alias: ['p', 'package-name',],
+	description: 'package name',
+	default: 'pn',
+	required: true,
+	type: 'string',
+	isQuestion: true,
+	value: null,
+	questionMessage: 'package name?',
+	questionType: 'input',
+}, {
+	name: 'userName',
+	alias: ['u', 'user-name',],
+	description: 'user name',
+	default: 'un',
+	required: false,
+	type: 'string',
+	isQuestion: true,
+	value: null,
+	questionMessage: 'user name?',
+	questionType: 'input',
+}, {
+	name: 'originUrl',
+	alias: ['o', 'origin-url',],
+	array: false,
+	description: 'repository origin url',
+	default: 'https://github.com/xx/xxxx.git',
+	required: false,
+	type: 'string',
+	isQuestion: true,
+	value: null,
+	questionMessage: 'repository origin url?',
+	questionType: 'input',
+}] as Array<IOption>;

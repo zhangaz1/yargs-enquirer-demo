@@ -26,6 +26,7 @@ function test4() {
 					description: 'package name',
 					default: 'pn',
 					required: true,
+					type: 'string',
 				},
 			})
 			// show examples of application in action.
